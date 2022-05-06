@@ -64,3 +64,11 @@ if(DolphinsData2 > KoalasData2 && DolphinsData2 >= 100){
 } else{
     console.log("nadie gana el torneo")
 }
+
+
+let edad = 20;
+
+ const mayorEdad = edad > 18 ? "es mayor de edad" : "es menor de edad";
+
+ console.log(mayorEdad)
+
