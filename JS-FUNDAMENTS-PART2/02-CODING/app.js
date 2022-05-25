@@ -66,3 +66,19 @@ console.log(martin[ageKey]);
 
 console.log(`${martin.firstName} tiene ${martin.friends.length} amigos, 
 y su mejor amigo se llama: ${martin.friends[1]}`)
+
+// OBJECT METHODS
+
+const persona = {
+    firstName: 'Martin',
+    lastName: 'Gago Choren',
+    birthYear: 1997,
+    driverLincense: true,
+    calcAge: function() {
+        this.age = new Date().getFullYear() - this.birthYear;
+        return this.age
+    }
+};
+console.log(persona.calcAge())
+console.log(persona.age)
+
